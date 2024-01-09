@@ -27,6 +27,9 @@ module.exports = {
     // React
     {
       files: ["**/*.{js,jsx,ts,tsx}"],
+      rules: {
+        quotes: ["error", "double"]
+      },
       plugins: ["react", "jsx-a11y"],
       extends: [
         "plugin:react/recommended",
@@ -52,6 +55,9 @@ module.exports = {
     // Typescript
     {
       files: ["**/*.{ts,tsx}"],
+      rules: {
+        quotes: ["error", "double"]
+      },
       plugins: ["@typescript-eslint", "import"],
       parser: "@typescript-eslint/parser",
       settings: {
